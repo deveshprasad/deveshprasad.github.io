@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://deveshprasad.github.io/DeveshPrasad_CV.pdf">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devesh Prasad</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', serif;
+      background: #faf9f6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      gap: 1.5rem;
+    }
+    h1 { font-size: 2rem; font-weight: 300; color: #141210; }
+    p  { font-size: 0.85rem; color: #9a9690; letter-spacing: 0.12em; text-transform: uppercase; }
+    .bar {
+      width: 180px; height: 1px; background: #dedad2;
+      position: relative; overflow: hidden;
+    }
+    .bar::after {
+      content: '';
+      position: absolute;
+      left: -100%; top: 0; height: 1px;
+      width: 100%; background: #a0692a;
+      animation: load 2s linear forwards;
+    }
+    @keyframes load { to { left: 0; } }
+  </style>
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://deveshprasad.github.io/DeveshPrasad_CV.pdf";
+    }, 2000);
+  </script>
 </head>
 <body>
-  <a href="https://deveshprasad.github.io/DeveshPrasad_CV.pdf">Click here if not redirected</a>
+  <h1>Devesh Prasad</h1>
+  <div class="bar"></div>
+  <p>Data &amp; AI Lead · UKRI Global Talent</p>
 </body>
 </html>
